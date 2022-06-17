@@ -1,0 +1,43 @@
+.menu {
+    margin-top: 40px;
+    &Ul {
+        display: flex;
+        max-width: 100%;
+        @media screen and (max-width: 830px) {
+            overflow-x: scroll;
+        }
+        li {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.015em;
+            color: #2C2C2C;
+            padding: 10px 15px;
+            background: #F9F9F9;
+            border-radius: 30px;
+            margin-left: 15px;
+            transition: .3s all;
+            cursor: pointer;
+            &:first-child {
+                margin-left: 0px;
+            }
+            &:hover {
+                color: #fff;
+                background: #282828;
+            }
+            &.active {
+                color: #fff;
+                background: #282828;
+            }
+        }
+    }
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1035px) {
+        flex-direction: column;
+    }
+}

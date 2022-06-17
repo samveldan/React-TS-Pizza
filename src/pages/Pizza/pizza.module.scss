@@ -1,0 +1,122 @@
+.pizza {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 60%;
+    .item {
+        max-width: 400px
+    }
+}
+
+.title {
+    font-weight: 800;
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    color: rgb(92, 99, 112);
+    font-size: 14px;
+}
+
+.info {
+    width: 100%;
+}
+
+.controlls {
+    background: #F3F3F3;
+    border-radius: 10px;
+    padding: 7px;
+    width: 100%;
+    div {
+        display: flex;
+        justify-content: space-between;
+        &:last-child {
+            margin-top: 6px;
+        }
+    }
+    button {
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.015em;
+        color: #2C2C2C;
+        padding: 7px 0;
+        border-radius: 6px;
+        width: 100%;
+    }
+}
+
+.activeBtn {
+    background-color: #fff;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &Price {
+        font-weight: 700;
+        font-size: 35px;
+        letter-spacing: 0.015em;
+        margin-right: 20px;
+        svg {
+            width: 20px;
+            margin-left: 3px;
+            path {
+                fill: black;
+            }
+        }
+    }
+    &Btn {
+        background: #FE5F1E;
+        border: 1px solid #FE5F1E;
+        border-radius: 30px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        padding: 10px 22px;
+        transition: .3s all;
+        &:hover {
+            opacity: .8;
+        }
+        &Plus {
+            margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            span {
+                display: block;
+                height: 14px;
+                width: 3px;
+                background-color: #fff;
+                &:first-child {
+                    transform: rotate(90deg) translateX(7px);
+                }
+                &:last-child {
+                    transform: translateY(-7px);
+                }
+            }
+        }
+        &Amount {
+            background: #EB5A1E;
+            color: #fff;
+            padding: 3px 7px;
+            border-radius: 100%;
+            margin-left: 10px;
+            display: none;
+        }
+    }
+}
+
+.amountActive {
+    display: block;
+}

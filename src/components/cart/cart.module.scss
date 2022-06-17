@@ -1,0 +1,32 @@
+.cart {
+    background: #FE5F1E;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    @media screen and (max-width: 550px) {
+        margin: 20px 0;
+    }
+}
+.border {
+    background: rgba(255, 255, 255, 0.25);
+    width: 2px;
+    height: 20px;
+    margin: 0 13px;
+}
+.price {
+    span {
+        margin-right: 5px;
+    }
+}
+.amount {
+    display: flex;
+    align-items: center;
+    span {
+        margin-left: 5px;
+    }
+}

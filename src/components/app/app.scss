@@ -1,0 +1,56 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../assets/fonts/fonts.scss";
+
+*, *:before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Proxima Nova";
+}
+
+body {
+    background-color: #FFDF8C;
+}
+
+main {
+    max-width: 1370px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 15px;
+    @media screen and (max-width: 550px) {
+        padding: 20px 0px;
+    }
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 40px;
+    @media screen and (max-width: 1100px) {
+        padding: 0 25px;
+    }
+    @media screen and (max-width: 1100px) {
+        padding: 0 10px;
+    }
+}
+
+hr {
+    background: #F7F7F7;
+    display: block;
+    border: 0;
+    height: 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

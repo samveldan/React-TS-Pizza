@@ -1,0 +1,16 @@
+.h1 {
+    margin: 40px 0;
+    @media screen and (max-width: 735px) {
+        margin: 20px 0;
+    }
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 285px);
+    gap: 40px;
+    justify-content: center;
+    @media screen and (max-width: 735px) {
+        display: flex;
+        flex-direction: column;
+    }
+}

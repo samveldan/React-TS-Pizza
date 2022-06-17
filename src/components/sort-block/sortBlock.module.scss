@@ -1,0 +1,72 @@
+.sortBlock {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    @media screen and (max-width: 1035px) {
+        margin-top: 30px;
+    }
+    @media screen and (max-width: 735px) {
+        margin-top: 20px;
+    }
+    img {
+        margin-right: 5px;
+    }
+    span {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.015em;
+        color: #2C2C2C;
+        @media screen and (max-width: 1035px) {
+            font-size: 18px;
+        }
+        &.sortBlockPopul {
+            font-weight: 400;
+            color: #FE5F1E;
+            border-bottom: 1px dashed #FE5F1E;
+            margin-left: 5px;
+        }
+    }
+}
+
+.arrowActive {
+    transform: rotate(180deg);
+}
+
+.popup {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 10px 0;
+    min-width: 135px;
+    display: none;
+    &Active {
+        display: block;
+    }
+    li {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.015em;
+        button {
+            padding: 15px 20px;
+            width: 100%;
+            text-align: left;
+            transition: .1s all;
+            &:hover {
+                font-weight: 700;
+                color: #FE5F1E;
+                background: rgba(254, 95, 30, 0.05);   
+            }
+        }
+    }
+}
+
+.activeLi button {
+    font-weight: 700;
+    color: #FE5F1E;
+    background: rgba(254, 95, 30, 0.05);
+}

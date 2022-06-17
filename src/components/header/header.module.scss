@@ -1,0 +1,14 @@
+.header {
+    margin-bottom: 40px;
+    @media screen and (max-width: 550px) {
+        margin-bottom: 0px;
+    }
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+    }
+}
